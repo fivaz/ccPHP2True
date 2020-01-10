@@ -1,0 +1,7 @@
+RewriteEngine On
+
+
+RewriteRule ^projets/?$ projets.php?%{QUERY_STRING}
+RewriteRule ^projets/([0-9]+)$ projets.php?id=$1&%{QUERY_STRING}
+RewriteRule ^universites/?$ universites.php?%{QUERY_STRING}
+RewriteRule ^universites/([0-9]+)$ universites.php?id=$1&%{QUERY_STRING}
